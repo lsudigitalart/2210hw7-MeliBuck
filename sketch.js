@@ -111,13 +111,13 @@ function draw(){
   translate(0,700);
   fill(220,180,0);
   noStroke();
-  rect(-5,di,400,6000);
+  rect(-5,di,400,8000);
   di = di-0.5;
 
   translate(610,0,500,0);
   fill(220,180,0);
   noStroke();
-  rect(-5,di,400,6000);
+  rect(-5,di,400,8000);
   di = di-0.5;
   pop();
 
@@ -125,13 +125,13 @@ function draw(){
   translate(0,700);
   fill(255,204,0);
   noStroke();
-  rect(-5,bi,350,5000);
+  rect(-5,bi,350,8000);
   bi = bi-0.2;
 
   translate(660,0,500,0);
   fill(255,204,0);
   noStroke();
-  rect(-5,bi,350,5000);
+  rect(-5,bi,350,8000);
   bi = bi-0.2;
   pop();
 
@@ -139,13 +139,13 @@ function draw(){
   translate(0,700);
   fill(255,255,100);
   noStroke();
-  rect(-10,i,300,2500);
+  rect(-10,i,300,8000);
   i = i-0.1;
 
   translate(720,0,600,0);
   fill(255,255,100);
   noStroke();
-  rect(-10,i,300,2500);
+  rect(-10,i,300,8000);
   i = i-0.1;
   pop();
 
@@ -158,7 +158,7 @@ function draw(){
     ellipse(e1r, 100, e1r);
   }
   if(actualTime > 70 && actualTime < 10000){
-    fill(255,255,255,99);
+    fill(255,255,255,150);
     noStroke();
     e2r = e2r * 1.08;
     ellipse(e2r, 50, e2r);
@@ -166,26 +166,25 @@ function draw(){
 
 
   //flute rects
-  if(actualTime > 16000 && actualTime < 60000){
-    fill(220,255,100,99);
+  if(actualTime > 16000 && actualTime < 70000){
+    fill(220,255,100,150);
     rect(fl,500,800,120,60);
     fl = fl-1
   }
-  if(actualTime > 26000 && actualTime < 60000){
-    fill(220,250,50,99);
+  if(actualTime > 26000 && actualTime < 70000){
+    fill(220,250,50,170);
     rect(fl2,600,600,100,50)
     fl2 = fl2-1
   }
-
-  if(actualTime > 43000 && actualTime < 60000){
-    fill(245,255,130,99);
-    rect(fl3,450,800,150,75)
-    fl3 = fl3-1
-  }
-  if(actualTime > 33000 && actualTime < 60000){
-    fill(230,255,100,99);
+  if(actualTime > 33000 && actualTime < 70000){
+    fill(230,255,100,130);
     rect(fl4,500,1000,200,100)
     fl4 = fl4-1
+  }
+  if(actualTime > 43000 && actualTime < 70000){
+    fill(245,255,130,200);
+    rect(fl3,450,800,150,75)
+    fl3 = fl3-1
   }
 
 
